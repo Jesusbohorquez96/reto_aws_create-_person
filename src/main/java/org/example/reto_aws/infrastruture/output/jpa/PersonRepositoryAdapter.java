@@ -6,12 +6,10 @@ import org.example.reto_aws.domain.model.Person;
 import org.example.reto_aws.domain.spi.PersonPersistencePort;
 import org.example.reto_aws.infrastruture.entity.PersonEntity;
 import org.example.reto_aws.infrastruture.output.repository.PersonRepository;
-import org.springframework.stereotype.Service;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-@Service
 @RequiredArgsConstructor
 public class PersonRepositoryAdapter implements PersonPersistencePort {
 

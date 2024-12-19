@@ -1,0 +1,28 @@
+app:
+  appdescription: "API para gestión de personas"
+  appversion: "1.0.0"
+
+server:
+  port: ${PORT}
+
+spring:
+  datasource:
+    url: ${URL_DB}
+    username: ${USER_NAME}
+    password: ${PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  api-docs:
+    enabled: true
+    path: /api-docs
+    swagger-ui:
+      enabled: true
+      path: /swagger-ui.html
+
+  main:
+    allow-bean-definition-overriding: true
+debug: true

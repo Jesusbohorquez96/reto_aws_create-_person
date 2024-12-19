@@ -9,5 +9,4 @@ public class RetoAwsApplication {
     public static void main(String[] args) {
         SpringApplication.run(RetoAwsApplication.class, args);
     }
-
 }
